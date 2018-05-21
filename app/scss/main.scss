@@ -1,0 +1,302 @@
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    color: #333;
+}
+
+section {
+    // overflow-x: hidden;
+    // padding-bottom: 65px;
+    height: 100%;
+    margin: 0 12px;
+}
+
+.login {
+    margin: 0 48px;
+    padding: 0;
+    .title {
+        padding-top: 115px;
+        margin-bottom: 40px;
+        font-size: 27px;
+        text-align: center;
+        color: #333;
+    }
+    div {
+        position: relative;
+        input {
+            background-color: #f8f8f8;
+            height: 40px;
+            line-height: 40px;
+            text-indent: 12px;
+            font-size: 15px;
+            color: #333;
+            border-radius: 4px;
+            border: 1px solid #f1f1f1;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        a {
+            position: absolute;
+            right: 0px;
+            top: 2px;
+            background: #ff9936;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            // border-radius: 4px;
+        }
+    }
+    form>input {
+        margin-top: 37px;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 4px;
+        border: 0;
+        color: #fff;
+        background: #d3d2d1;
+        font-size: 18px;
+        // box-shadow: 0 0 10px rgba($color: #74e485, $alpha: .75)
+    }
+    form>input.active{
+        background: linear-gradient(to left, #ff6636, #ff9936);
+    }
+}
+
+.index {
+    margin:0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .top {
+        position: relative;
+        height: 64%;
+        background: url(../images/index.jpg) no-repeat;
+        overflow: hidden;
+        background-size: contain;
+    }
+    .btn {
+        top: 63%;
+        position: absolute; // bottom: 5%;
+        padding: 0 100px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    a,input{
+        display: block;
+        text-align: center; // margin:0 54px;
+        height: 47.5px;
+        line-height: 47.5px;
+        color: #fff;
+        font-size: 15px;
+        border-radius: 8px;
+        
+        &:first-child {
+            background: linear-gradient(to left, #ff6636, #ff9936);
+            &:active {
+                background: #f9cf0b;
+            }
+        }
+        &+input {
+            width: 100%;
+            margin-top: 20px;
+            box-shadow: 0 0 7px rgba(86, 86, 54, .08);
+            border: 1px solid #c3c3c3;
+            color: #ff6636;
+            &:active{
+                border-color: #ff9936;
+            }
+        }
+    }
+    
+    
+}
+
+.code{
+    margin: 0;
+    background-color: #f9f9f9;
+    .top{
+        padding: 50px 75px;
+        background-color: #fff;
+        a,input{
+            width: 100%;
+            text-align: center;
+            display: block;
+            border-radius: 4px;
+        }
+        input{
+            height: 38px;
+            line-height: 38px;
+            border: 1px solid #dadada;
+            margin-bottom: 25px;
+        }
+        a{
+            background-color: #d3d2d1;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            &.active{
+                background: linear-gradient(to left, #ff6636, #ff9936);
+            }
+        }
+
+    }
+}
+
+.pay{
+    text-align: center;
+    .machine-code{
+        padding-top: 20px;
+        padding-bottom: 50px;
+        color: #666;
+        font-size: 15px;
+    }
+    .title{
+        font-size: 18px;
+        color: #333;
+        padding-bottom: 25px;
+    }
+    .num{
+        font-size: 24px;
+        margin-bottom: 65px;
+        span{
+            color: #333;
+            font-size: 50px;
+        }
+    }
+    .wechat-pay{
+        margin:0 60px;
+        text-align: left;
+        font-size: 13px;
+        height: 33px;
+        line-height: 33px;
+        color: #666;
+        padding-left: 22px;
+        border-bottom: 1px solid #dadada;
+        background: url(../images/wechat-pay.png)left center no-repeat;
+        background-size: 14px;
+        margin-bottom: 115px;
+        position: relative;
+        label{
+            position: absolute;
+            right: 0;
+            top:50%;
+            margin-top: -6px;
+            width: 12px;
+            height: 12px;
+            display: block;
+            background: url(../images/checked.png) no-repeat;
+            background-size: 12px;
+        }
+        input{
+            display: none;
+        }
+    }
+    .btn{
+        // width: 100%;
+        margin: 0 50px;
+        a{
+            display: block;
+            border-radius: 6px;
+            height: 40px;
+            line-height: 40px;
+            border: 0;
+            color: #fff;
+            background-color: #60ad48;
+            width: 100%;
+            font-size: 15px;
+        }
+    }
+}
+.active-code {
+    height: 100%;
+    padding-top: 21px;
+    background-color: #f9f9f9;
+    .top{        
+        margin:0px 25px 0;
+        text-align: center;
+        background-color: #fff;
+        padding-bottom: 43px;
+        box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.12)
+    }
+    .machine-code {
+        padding-top: 20px;
+        padding-bottom: 50px;
+        color: #333;
+        font-size: 19px;
+    }
+    .title {
+        font-size: 14px;
+        color: #333;
+        padding-bottom: 25px;
+    }
+    .num {
+        input{
+            width: 48px;
+            height: 48px;
+            text-align: center;
+            font-size: 33px;
+            background-color: #e8e8e8;
+            margin:0;
+            border:1px solid #dadada;
+            border-radius: 1px;
+            &.mini{
+                width: 34px;
+                height: 34px;
+            }
+        }
+    }
+    .tips{
+        margin-top: 43px;
+        margin:43px 25px;
+        font-size: 11px;
+        color: #666;
+        line-height: 18px;
+    }
+}
+
+.order-list{
+    padding: 0 18px;
+    li{
+        border-bottom: 1px solid #dadada;
+        padding:14px 20px;
+        .time{
+            color: #666;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        .detail{
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            .left{
+                
+                line-height: 16px;
+            }
+            .money{
+                margin-top: 19px;
+                padding-left: 18px;
+                background: url(../images/money.png) left center no-repeat;
+                background-size: 13px;
+                height: 13px;
+                line-height: 13px;
+            }
+        }
+    }
+}
