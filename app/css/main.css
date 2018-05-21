@@ -80,7 +80,8 @@ section {
     padding: 0 100px;
     width: 100%;
     box-sizing: border-box; }
-  .index a, .index input {
+  .index a,
+  .index input {
     display: block;
     text-align: center;
     height: 47.5px;
@@ -88,17 +89,21 @@ section {
     color: #fff;
     font-size: 15px;
     border-radius: 8px; }
-    .index a:first-child, .index input:first-child {
+    .index a:first-child,
+    .index input:first-child {
       background: linear-gradient(to left, #ff6636, #ff9936); }
-      .index a:first-child:active, .index input:first-child:active {
+      .index a:first-child:active,
+      .index input:first-child:active {
         background: #f9cf0b; }
-    .index a + input, .index input + input {
+    .index a + input,
+    .index input + input {
       width: 100%;
       margin-top: 20px;
       box-shadow: 0 0 7px rgba(86, 86, 54, 0.08);
       border: 1px solid #c3c3c3;
       color: #ff6636; }
-      .index a + input:active, .index input + input:active {
+      .index a + input:active,
+      .index input + input:active {
         border-color: #ff9936; }
 
 .code {
@@ -107,7 +112,8 @@ section {
   .code .top {
     padding: 50px 75px;
     background-color: #fff; }
-    .code .top a, .code .top input {
+    .code .top a,
+    .code .top input {
       width: 100%;
       text-align: center;
       display: block;
@@ -240,3 +246,44 @@ section {
         background-size: 13px;
         height: 13px;
         line-height: 13px; }
+
+.user-center {
+  padding: 0px;
+  background-color: #f9f9f9;
+  height: 100%; }
+  .user-center .avatar {
+    margin-right: 23px; }
+    .user-center .avatar img {
+      width: 59px;
+      height: 59px;
+      border-radius: 50%; }
+  .user-center .me {
+    background-color: #fff;
+    padding: 32px 28px;
+    display: flex;
+    justify-content: start;
+    line-height: 1; }
+    .user-center .me .name {
+      margin-top: 15px;
+      font-size: 14px; }
+    .user-center .me .degree {
+      font-size: 11px;
+      color: #666;
+      margin-top: 8px; }
+  .user-center .my-list {
+    margin-top: 21px;
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    height: 55px;
+    line-height: 55px;
+    background: url(../images/icon.png) 30px center no-repeat;
+    background-size: 20px; }
+    .user-center .my-list a {
+      padding-left: 59px;
+      font-size: 13px;
+      color: #666;
+      display: block;
+      background: url(../images/arrow.png) no-repeat;
+      background-size: 8px 14px;
+      background-position: right center;
+      margin-right: 29px; }
