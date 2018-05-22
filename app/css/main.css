@@ -215,7 +215,7 @@ section {
     border: 1px solid #dadada;
     border-radius: 1px; }
     .active-code .num input.mini {
-      width: 34px;
+      width: 10%;
       height: 34px; }
   .active-code .tips {
     margin-top: 43px;
