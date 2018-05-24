@@ -1,0 +1,264 @@
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    color: #333;
+}
+
+section {
+    // overflow-x: hidden;
+    // padding-bottom: 65px;
+    height: 100%;
+    // margin: 0 12px;
+}
+
+.login {
+    margin: 0 48px;
+    padding: 0;
+    .title {
+        padding-top: 115px;
+        margin-bottom: 40px;
+        font-size: 27px;
+        text-align: center;
+        color: #333;
+    }
+    div {
+        position: relative;
+        input {
+            background-color: #f8f8f8;
+            height: 40px;
+            line-height: 40px;
+            text-indent: 12px;
+            font-size: 15px;
+            color: #333;
+            border-radius: 4px;
+            border: 1px solid #f1f1f1;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        a {
+            position: absolute;
+            right: 0px;
+            top: 2px;
+            background: #ff9936;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #fff; // border-radius: 4px;
+        }
+    }
+    form>input {
+        margin-top: 37px;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 4px;
+        border: 0;
+        color: #fff;
+        background: #d3d2d1;
+        font-size: 18px; // box-shadow: 0 0 10px rgba($color: #74e485, $alpha: .75)
+    }
+    form>input.active {
+        background: linear-gradient(to left, #ff6636, #ff9936);
+    }
+}
+
+.repair{
+    margin:0;
+    background-color: #f9f9f9;
+    .title{                
+        padding: 15px 35px 8px;
+        font-size: 15px;
+        color: #333;
+        display: flex;
+        justify-content: space-between;
+        .machine-num{
+            font-size: 13px;
+        }
+    }
+    li{
+        height: 53px;
+        line-height: 53px;
+        background-color: #fff;
+        margin-bottom: 5px;
+        input{
+            display: none;
+        }
+        label{
+            display: block;
+            width: 100%;
+            text-indent: 35px;
+            font-size: 13px;
+            color: #666;
+            background: url(../images/server/circle.png) right 35px center no-repeat;
+            background-size: 12px;
+        }
+        input:checked+label{
+            background-image: url(../images/server/checked.png);
+        }
+        
+    }
+    .btn {
+        color: #fff;
+        display: block;
+        margin: 0 35px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #d3d2d1;
+        border-radius: 4px;
+        margin-top: 66px;
+    }
+    .btn.active{
+        background: linear-gradient(to left, #ff6636, #ff9936)
+    }
+}
+
+.machine-info{
+    background-color: #f9f9f9;
+    form{
+        padding: 35px 20%;
+        background-color: #fff;
+        div{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 19px;
+        }
+        label{
+            font-size: 15px;
+            color: #333;
+            line-height: 30px;
+        }
+        input{
+            height: 30px;
+            line-height: 30px;
+            width: 76%;
+            text-indent: 7px;
+            border: 1px solid #dadada;
+            font-size: 12px;
+            color: #333;
+        }
+    }   
+    a{
+        margin-top: 13px;
+        color: #fff;
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #d3d2d1;
+        border-radius: 4px;        
+    }
+    .btn.active {
+        background: linear-gradient(to left, #ff6636, #ff9936)
+    }
+}
+
+.machine-list{
+    background-color: #f9f9f9;
+    .title{
+        background-color: #fff;
+        padding: 15px 25px;
+        border-bottom: 1px solid #949494;
+        text-align: right;
+        a{
+            display: inline-block;
+            width: 67px;
+            height: 27px;
+            font-size: 15px;
+            color: #ff6636;
+            border: 1px solid #ff6636;
+            border-radius: 4px;
+            line-height: 27px;
+            text-align: center;
+            &:last-child{
+                color: #ff9936;
+                margin-left: 20px;
+            }
+        }
+    }
+    li{
+        line-height: 1;
+        padding: 0 25px;
+        background-color: #fff;
+        margin-bottom: 10px;
+        .machine-num{
+            padding-top: 20px;
+            color: #666;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        .detail{
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 11px;
+        }
+        .btn{
+            background-color: #fff;
+            padding: 17px 0px 25px;
+            border-top: 1px solid #dadada;
+            text-align: right;
+            a {
+                display: inline-block;
+                width: 59px;
+                height: 21px;
+                font-size: 13px;
+                color: #333;
+                border: 1px solid #333;
+                border-radius: 4px;
+                line-height: 21px;
+                text-align: center;
+                margin-left: 15px;
+                
+            }
+        }
+
+    }
+}
+
+.machine-status{
+    background-color: #f9f9f9;
+    li{
+        line-height: 1;
+        padding: 0 25px;
+        background-color: #fff;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        .title{
+            border-bottom: 1px solid #dadada;
+            font-size: 15px;
+            padding: 15px 0 10px;
+            span:last-child{
+                color: #ff9936;
+            }
+            span:last-child.online{
+                color: #68d13a;
+            }
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 11px;
+        }
+    }
+}
