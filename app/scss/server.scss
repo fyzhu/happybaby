@@ -124,7 +124,7 @@ section {
         margin-top: 66px;
     }
     .btn.active{
-        background: linear-gradient(to left, #ff6636, #ff9936)
+        background: linear-gradient(to left, #ff6636, #ff9936);
     }
 }
 
@@ -259,6 +259,192 @@ section {
             font-size: 13px;
             color: #666;
             margin-bottom: 11px;
+        }
+    }
+}
+
+.income-detail{
+    li{
+        padding: 20px 20px;
+        margin: 0 18px;
+        border-bottom: 1px solid #dadada;
+        div{
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #333;
+            
+        }
+        .detail {
+            margin-top: 7px;
+            span:last-child{
+                font-size: 12px;
+                color: #666;
+            }
+        }
+    }
+}
+.withdraw-detail {
+    li {
+        padding: 20px 20px;
+        margin: 0 18px;
+        border-bottom: 1px solid #dadada;
+        div {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #333;
+        }
+        .detail {
+            margin-top: 8px;
+            font-size: 11px;
+            color: #666;
+        }
+        .title{
+            span:last-child{
+                padding-left: 18px;
+                background: url(../images/money.png)left center no-repeat;
+                background-size: 13px;
+            }
+        }
+    }
+}
+
+.shop-info{
+    background-color: #f9f9f9;
+    font-size: 13px;
+    line-height: 1;
+    
+    .basic-info{
+        margin-bottom: 5px;
+        background-color: #fff;
+        padding: 18px 27px;
+        &>div {
+            padding-top: 20px;
+            padding-bottom: 11px;
+            border-bottom: 1px solid #dadada;
+            display: flex;
+            justify-content: space-between;
+            input{
+                border: 0;
+                text-align: right;
+            }
+        }
+    }
+    .detail{
+        padding: 18px 27px;
+        background-color: #fff;
+        margin-bottom: 5px;
+        label{
+            display: block;
+        }
+        textarea{
+            margin-top: 10px;
+            width: 100%;
+            height: 79px;
+            margin-bottom: 22px;
+            padding: 5px 10px;
+            line-height: 1.5;
+            box-sizing: border-box;
+        }
+    }
+    a{
+        margin-top: 45px;
+        display: block;
+        text-align: center;
+        height: 40px;
+        // width: 100%;
+        margin: 45px 27px 0;
+        border-radius: 4px;
+        line-height: 40px;
+        color: #fff;
+        background-color: #d3d2d1;
+        &.active{
+            background: linear-gradient(to left, #ff6636, #ff9936);
+        }
+    }
+}
+.income{
+    background-color: #f9f9f9;
+    .top{
+        padding: 15px 0;
+        background-color: #fff;
+        .top-container{        
+        margin: 0 27px;
+        // width: 100%;
+        height: 180px;
+        text-align: center;
+        border-radius: 13px;
+        color: #fff;
+        line-height: 1;
+        background: linear-gradient(to left, #ff6636, #ff9936);
+        .title{
+            padding-top: 20px;
+            color: #484848;
+        }
+        .num{
+            font-size: 44px;
+            margin-top: 20px;
+        }
+        ul{
+           display: flex;
+           justify-content: space-around;
+           margin-top: 25px;
+           li{
+               width: 33%;               
+           }
+           li:first-child{               
+               border-right: 1px solid #fff;
+           }
+           li:last-child{
+               border-left: 1px solid #fff;
+           }
+           span{
+               display: block;
+               &:first-child{
+                   font-size: 17px;
+                   margin-bottom: 10px;
+               }
+               &:last-child{
+                   font-size: 10px;
+               }
+           } 
+        }
+        }
+    }
+    .btn ul{
+        background-color: #fff;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        display: flex;
+        font-size: 12px;
+        justify-content: space-around;
+        a{
+            color: #333;
+            padding-top: 50px;
+            display: block;
+            background: url(../images/server/withdraw.png)center top no-repeat;
+            background-size: 38px;
+            
+        }
+        li:first-child a{
+            background-image: url(../images/server/income.png);
+        }
+
+        li:last-child a{
+            background-image: url(../images/server/machine.png);
+        }
+    }
+    .detail{
+        background-color: #fff;
+        padding: 15px 40px;
+        font-size: 13px;
+        li{
+            display: flex;
+            justify-content: space-between;
+            line-height: 25px;
         }
     }
 }
