@@ -319,15 +319,34 @@ section {
         margin-bottom: 5px;
         background-color: #fff;
         padding: 18px 27px;
+        .type {
+            a{
+                color: #969696;
+                span.result{
+                    color: #333;
+                }
+            }
+            i{
+                display: inline-block;
+                height: 100%;
+                width: 12px;
+                background: url(../images/arrow.png)center no-repeat;
+                background-size: 7px;
+                vertical-align: middle;
+            }
+        }
         &>div {
-            padding-top: 20px;
-            padding-bottom: 11px;
+            padding-top: 14px;
+            padding-bottom: 5px;
+            line-height: 25px;
+            height: 25px;
             border-bottom: 1px solid #dadada;
             display: flex;
             justify-content: space-between;
             input{
                 border: 0;
                 text-align: right;
+                width: 200px;
             }
         }
     }
@@ -348,7 +367,7 @@ section {
             box-sizing: border-box;
         }
     }
-    a{
+    &>a{
         margin-top: 45px;
         display: block;
         text-align: center;
